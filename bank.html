@@ -11,5 +11,38 @@
     <header>
         <h1 class="text-4xl text-center margin mt-10">Lets get some <span class="text-6xl text-blue-500 font-semibold">M</span><span class="text-red-500 font-semibold">o</span><span class="text-yellow-500 font-semibold">o</span><span class="text-blue-500 font-semibold">o</span><span class="text-green-500 font-semibold">o</span><span class="text-red-500 font-semibold">o</span><span class=" text-blue-500 font-semibold">n</span><span class="text-yellow-500 font-semibold">e</span><span class="text-red-500 font-semibold">y</span><span class="text-green-500 font-semibold">y</span></h1>
     </header>
+    <section>
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-10">
+            <div class="bg-green-400 rounded-lg p-8 pl-10 shadow-xl">
+                <h4 class="text-2xl font-semibold text-white">Deposit</h4>
+                <h2 class="text-5xl text-white">$<span id="deposit-screen">00</span></h2>
+            </div>
+            <div class="bg-yellow-300 rounded-lg p-8 pl-10 shadow-xl">
+                <h4 class="text-2xl font-semibold text-grey">Withraw</h4>
+                <h2 class="text-5xl text-grey">$<span id="withdraw-screen">00</span></h2>
+            </div>
+            <div class="bg-blue-400 rounded-lg p-8 pl-10 shadow-xl">
+                <h4 class="text-2xl font-semibold text-white">Balance</h4>
+                <h2 class="text-5xl text-white">$<span id="balance-screen">1240</span></h2>
+            </div>            
+        </div>
+    </section>
+    <!-- deposit and withdraw input field -->
+    <section>
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-10">
+            <div class="bg-green-300 rounded-lg p-8 pl-10 shadow-xl">
+                <h4 class="text-xl font-semibold text-grey">Please Deposit</h4>
+                <input class="w-9/12 block mt-5 px-5 py-1 rounded-md" type="text" name="deposit" id="deposit" placeholder="$ amount you want to deposit....">
+                <button id="btn-deposit" class="bg-amber-500 px-8 py-2 mt-5 rounded-md font-semibold hover:bg-yellow-500">Deposit</button>
+            </div>
+            <div class="bg-red-300 rounded-lg p-8 pl-10 shadow-xl">
+                <h4 class="text-xl font-semibold text-grey">Please Withdraw</h4>
+                <input class="w-9/12 block mt-5 px-5 py-1 rounded-md" type="text" name="deposit" id="withdraw" placeholder="$ amount you want to withdraw....">
+                <button id="btn-withdraw" class="bg-amber-500 px-8 py-2 mt-5 rounded-md font-semibold hover:bg-red-500 hover:text-white">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 </html>
